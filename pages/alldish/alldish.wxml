@@ -1,0 +1,23 @@
+<!--pages/alldish/alldish.wxml-->
+<view>
+<view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">推荐菜式列表</view>
+            <view class="weui-panel__bd">
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">三杯鸡</view>
+                        <view class="weui-media-box__desc">三杯鸡是江西省地方传统名菜，相传与民族英雄文天祥有关。因烹制时不放汤水，仅用米酒一杯、猪油一杯、酱油一杯，故得名。</view>
+                    </view>
+                </navigator>
+            </view>
+            <view class="weui-panel__ft">
+                <view class="weui-cell weui-cell_access weui-cell_link" bindtap='viewmo'>
+                    <view class="weui-cell__bd">查看更多</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+            </view>
+        </view>
+</view>

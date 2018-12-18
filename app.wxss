@@ -1,0 +1,17 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+@import 'style/font-awesome.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+page{
+  background-color: #72c9a7; 
+  /* 页面背景色 */
+}

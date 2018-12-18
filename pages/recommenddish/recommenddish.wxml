@@ -1,0 +1,12 @@
+<!--pages/recommenddish/recommenddish.wxml-->
+<view>
+            <view wx:for="{{recdish}}" class="list">    
+                <navigator class="card" url="../detail/detail?id={{item.id}}">
+                       <view class="recinfo">
+                       <text class="infotext">{{item.name}}</text>
+                       </view>
+                        <image class="recimg" src="{{item.url}}"></image>
+                        <!-- <text class="recname">三杯鸡</text> -->
+                </navigator>   
+            </view>
+</view>

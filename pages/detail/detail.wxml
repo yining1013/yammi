@@ -1,0 +1,10 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<view class="page">
+<view class='page__hd'>
+<image url=""></image>
+</view>
+<view class="page__bd">
+<i class="fa fa-cutlery" aria-hidden="true"></i>
+</view>
+</view>
