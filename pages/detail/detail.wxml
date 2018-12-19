@@ -3,7 +3,16 @@
 <view>
 <view class='hd'>
 <image src="{{dish.url}}"></image>
-<view class="likebutton"><i class="fa fa-heart-o icon" aria-hidden="true"></i><text>点赞</text></view>
+<view class="likebutton" bindtap='clicklike'>
+<block wx:if="{{like}}">
+<i class="fa fa-heart icon" aria-hidden="true"></i>
+<text>取消点赞</text>
+</block>
+<block wx:else>
+<i  class="fa fa-heart-o icon" aria-hidden="true"></i>
+<text>点赞</text>
+</block>
+</view>
 </view>
 <view class="bd">
 <view class="descitem">

@@ -7,7 +7,8 @@ Page({
    */
   data: {
     id:'',
-    dish:{}
+    dish:{},
+    like:false
   },
 
   /**
@@ -24,7 +25,17 @@ Page({
       }
     }
   },
-
+  clicklike: function(){
+    console.log('click:',this.data.like);
+    if(this.data.like==false){
+      console.log('true');
+      this.setData({like:true});
+    }else{
+      console.log('false');
+      this.setData({like:false});
+    }
+    
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

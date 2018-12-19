@@ -11,5 +11,6 @@
   margin-bottom: 10rpx;
 }
 .likebutton{
-  margin-left: 78%;
+  margin-left: 72%;
+  font-size:35rpx;
 }
