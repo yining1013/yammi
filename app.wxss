@@ -12,6 +12,6 @@
 } 
 
 page{
-  background-color: #72c9a7; 
+  background-color: #bbe4d4; 
   /* 页面背景色 */
 }

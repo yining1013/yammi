@@ -1,1 +1,15 @@
 /* pages/detail/detail.wxss */
+.bd{
+  margin: 30rpx 20rpx;
+}
+.icon{
+  display: inline-block;
+  margin-right: 25rpx;
+}
+.descitem{
+  font-size: 35rpx;
+  margin-bottom: 10rpx;
+}
+.likebutton{
+  margin-left: 78%;
+}

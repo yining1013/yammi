@@ -1,10 +1,26 @@
 <!--pages/detail/detail.wxml-->
 <!-- <text>pages/detail/detail.wxml</text> -->
-<view class="page">
-<view class='page__hd'>
-<image url=""></image>
+<view>
+<view class='hd'>
+<image src="{{dish.url}}"></image>
+<view class="likebutton"><i class="fa fa-heart-o icon" aria-hidden="true"></i><text>点赞</text></view>
 </view>
-<view class="page__bd">
-<i class="fa fa-cutlery" aria-hidden="true"></i>
+<view class="bd">
+<view class="descitem">
+<i class="fa fa-bell icon" aria-hidden="true"></i>
+<text>{{dish.name}}</text>
+</view>
+<view class="descitem">
+<i class="fa fa-bars icon" aria-hidden="true"></i>
+<text>{{dish.desc}}</text>
+</view>
+<view class="descitem">
+<i class="fa fa-cutlery icon" aria-hidden="true"></i>
+<text>{{dish.rawmaterial}}</text>
+</view>
+<view class="descitem">
+<i class="fa fa-heart icon" aria-hidden="true"></i>
+<text>共有{{dish.like}}人点赞</text>
+</view>
 </view>
 </view>

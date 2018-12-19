@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    id:''
+    id:'',
+    dish:{}
   },
 
   /**
@@ -16,6 +17,12 @@ Page({
     console.log(options)
     this.setData({id:options.id})
     console.log(app.globalData)
+    for(let i in app.globalData.recdish){
+      if (app.globalData.recdish[i].id==options.id){
+        // console.log(item)
+        this.setData({ dish: app.globalData.recdish[i]})
+      }
+    }
   },
 
   /**
