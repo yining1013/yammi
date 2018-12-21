@@ -1,35 +1,63 @@
 <!--pages/detail/detail.wxml-->
 <!-- <text>pages/detail/detail.wxml</text> -->
 <view>
+
+<view class="page">
+
 <view class='hd'>
-<image src="{{dish.url}}"></image>
+
+<view class="pic"><image src="{{dish.url}}"></image></view>
+
+</view>
+
+<view class="bd">
 <view class="likebutton" bindtap='clicklike'>
 <block wx:if="{{like}}">
-<i class="fa fa-heart icon" aria-hidden="true"></i>
-<text>取消点赞</text>
+<i class="fa fa-heart like-icon" aria-hidden="true"></i>
+<text> 取消赞</text>
 </block>
 <block wx:else>
 <i  class="fa fa-heart-o icon" aria-hidden="true"></i>
-<text>点赞</text>
+<text> 赞</text>
 </block>
 </view>
-</view>
-<view class="bd">
+
 <view class="descitem">
+<view class="description">
+<view class="icon">
 <i class="fa fa-bell icon" aria-hidden="true"></i>
+</view>
 <text>{{dish.name}}</text>
 </view>
+</view>
 <view class="descitem">
+<view class="description">
+<view class="icon">
 <i class="fa fa-bars icon" aria-hidden="true"></i>
+</view>
+<view class="tex">
 <text>{{dish.desc}}</text>
 </view>
-<view class="descitem">
-<i class="fa fa-cutlery icon" aria-hidden="true"></i>
-<text>{{dish.rawmaterial}}</text>
+</view>
 </view>
 <view class="descitem">
+<view class="description">
+<view class="icon">
+<i class="fa fa-cutlery icon" aria-hidden="true"></i>
+</view>
+<view class="tex">
+<text>{{dish.rawmaterial}}</text>
+</view>
+</view>
+</view>
+<view class="descitem">
+<view class="description">
+<view class="icon">
 <i class="fa fa-heart icon" aria-hidden="true"></i>
+</view>
 <text>共有{{dish.like}}人点赞</text>
+</view>
+</view>
 </view>
 </view>
 </view>

@@ -1,16 +1,54 @@
 /* pages/detail/detail.wxss */
 .bd{
-  margin: 30rpx 20rpx;
+  background-color: #FFFFFF;
 }
 .icon{
+  margin-left:8rpx;
   display: inline-block;
   margin-right: 25rpx;
 }
 .descitem{
   font-size: 35rpx;
   margin-bottom: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
 }
 .likebutton{
-  margin-left: 72%;
+  margin:5rpx;
+  margin-left: 75%;
   font-size:35rpx;
+}
+/* /* .tex{
+  max-width: 90%;
+  transform: translateX(4%); 
+} */
+.icon{
+  margin-bottom: 5%;
+  margin-right: 5%;
+  /* float:left; */
+  color: #ADEE91;
+}
+.description{
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  color:#444444;
+}
+.page{
+  margin: 5rpx 20rpx 20rpx 10rpx;
+  overflow:hidden;
+  box-shadow: 5rpx 5rpx 8rpx #8F8F8F;
+  height: 90%;
+  width:95%;
+  transform: translateX(1%); 
+  background-color: white;
+}
+.pic{
+  overflow: hidden;
+  margin:0rpx;
+}
+.like-icon{
+  margin-bottom: 5%;
+  margin-right: 5%;
+  color:#e00000;
 }

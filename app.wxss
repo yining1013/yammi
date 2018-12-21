@@ -12,6 +12,10 @@
 } 
 
 page{
-  background-color: #bbe4d4; 
+  background-image:url(http://120.79.160.115/test/pic.png);
+  max-width : 100%;
+  max-height : 100%;
+  background-size:100% 100%;
   /* 页面背景色 */
+
 }

@@ -18,9 +18,23 @@
 
 .usermotto {
   margin-top: 200px;
+  color:#FFFFFF;
+  margin-bottom: 40rpx;
+  font-size: 44rpx;
 }
-.recommendbtn{
+/* .recommendbtn{
   position: relative;
   right:3rpx;
+} */
+.recommendbtn{
+  color:white;
+  background: transparent;
+  border:5rpx solid white;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 2rpx 36rpx;
+  }
+.container{
+  background:url(http://120.79.160.115/test/bkgrd.png);
+  background-size:100% 100%;
 }
-

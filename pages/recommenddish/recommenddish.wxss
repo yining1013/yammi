@@ -6,9 +6,9 @@
   width:95%;
   height:345rpx;
   margin:20rpx 20rpx 44rpx 20rpx;
-  box-shadow: 8rpx 8rpx 5rpx #888888;
+  box-shadow: 8rpx 6rpx 5rpx #888888;
   overflow: hidden;
-  border-radius: 20rpx;
+  border-radius: 15rpx;
 }
 .recimg{
   display: block; 
@@ -20,15 +20,15 @@
   margin:0 auto;
   bottom:-8%;
   width:93%;
-  height:43%;
+  height:35%;
   transform: translateX(1%); 
   /* background-color: white; */
   /* opacity: 0.5; */
   text-shadow: 0 1px 1px hsla(0,0%,100%,.3); 
-  background: hsla(0,0%,100%,.98) border-box;
+  background: hsla(0,0%,100%,.96) border-box;
   /* filter: blur(5px); */
-  border-radius: 20rpx;
-  box-shadow: 0rpx 8rpx 5rpx #8F8F8F;
+  border-radius: 15rpx;
+  box-shadow: 0rpx 6rpx 5rpx #8F8F8F;
 }
 
 .recinfo::before { 
@@ -38,4 +38,9 @@
   filter: blur(20px);
   
   /* margin: -30px;  */
+}
+.infotext{
+  margin:5rpx 15rpx 15rpx 15rpx;
+  font-size: 20px;
+  color:#444444;
 }

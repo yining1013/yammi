@@ -11,7 +11,7 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <view>
-    <button class="weui-btn mini-btn recommendbtn" type="primary" size="mini" bindtap='recommenddish'>推荐菜式</button>
+    <button class="recommendbtn" bindtap='recommenddish'>开始推荐</button>
     <!-- <button class="weui-btn mini-btn" type="default" size="mini" bindtap='alldish'>所有菜式</button> -->
   </view>
   <view class="weui-footer weui-footer_fixed-bottom">

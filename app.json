@@ -8,8 +8,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#72c9a7",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#444444",
+    "navigationBarTitleText": "Yammi",
+    "navigationBarTextStyle": "white"
   }
 }
