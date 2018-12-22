@@ -53,6 +53,17 @@ Page({
       })
     }
   },
+  
+  onShareAppMessage: function () {
+    console.log('分享成功')
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+    return {
+      title: 'scutyammi菜式分享',
+      path: '/page/index/index'
+    }
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

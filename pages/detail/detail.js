@@ -15,7 +15,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
+    
+   console.log(options)
     this.setData({id:options.id})
     console.log(app.globalData)
     for(let i in app.globalData.recdish){
@@ -25,6 +26,7 @@ Page({
       }
     }
   },
+
   clicklike: function(){
     console.log('click:',this.data.like);
     if(this.data.like==false){
@@ -81,7 +83,5 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
-  }
+  
 })

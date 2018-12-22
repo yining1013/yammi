@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function (ops) {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -8,8 +8,24 @@ App({
 
     // 登录
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      success(res) {
+        if (res.code) {
+          // 发起网络请求
+          wx.request({
+            url: 'https://api.weixin.qq.com/sns/jscode2session',
+            data: {
+              js_code: res.code,
+              appid: 'wxeb3ca6ec32ed2bce',
+              secret: '1a7d3b6794d16b9f6e318b97efc3acf1',
+              grant_type: 'authorization_code'
+            },
+            success(res) {
+              console.log(res)
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
       }
     })
     // 获取用户信息
@@ -32,6 +48,15 @@ App({
         }
       }
     })
+    if(ops.scene==1044){
+      var shareTickets = ops.shareTicket
+      wx.getShareInfo({
+        shareTicket: shareTickets,
+        success: function (res) {
+          console.log(res)
+        }
+      })
+    }
   },
   globalData: {
     userInfo: null
