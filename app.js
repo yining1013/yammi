@@ -21,6 +21,54 @@ App({
             },
             success(res) {
               console.log(res)
+              var session_key=res.data.session_key
+              var openid=res.data.openid
+              if (ops.scene == 1044) {
+                var shareTickets = ops.shareTicket
+                wx.getShareInfo({
+                  shareTicket: shareTickets,
+                  success: function (res) {
+                    // console.log(res, session_key)
+                    var iv=res.iv
+                    var encryptedData = res.encryptedData
+                    wx.request({
+                      url: 'http://120.79.160.115:5000/users/getRecDish',
+                      method: 'post',
+                      data:{
+                        iv: iv,
+                        encryptedData: encryptedData,
+                        session_key: session_key,
+                        appid: 'wxeb3ca6ec32ed2bce',
+                        openid: openid
+                      },
+                      success(res){
+                        console.log(res)
+                        wx.setStorageSync('Dish_List', res.data.Dish_List)
+                      }
+                    })
+                  }
+                })
+              }else{
+                wx.request({
+                  url: 'http://120.79.160.115:5000/users/getRecDish',
+                  method: 'post',
+                  data: {
+                    'iv': '',
+                    'encryptedData': '',
+                    'session_key': '',
+                    'appid':'',
+                    'openid': openid
+                  },
+                  success(res) {
+                    // this.globalData.Dish_List = res.data.Dish_List
+                    // if (this.userInfoReadyCallback) {
+                    //   this.userInfoReadyCallback(res)
+                    // }
+                    console.log(res)
+                    wx.setStorageSync('Dish_List', res.data.Dish_List)
+                  }
+                })
+              }
             }
           })
         } else {
@@ -48,15 +96,7 @@ App({
         }
       }
     })
-    if(ops.scene==1044){
-      var shareTickets = ops.shareTicket
-      wx.getShareInfo({
-        shareTicket: shareTickets,
-        success: function (res) {
-          console.log(res)
-        }
-      })
-    }
+    
   },
   globalData: {
     userInfo: null

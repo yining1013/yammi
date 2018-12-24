@@ -6,13 +6,13 @@
 
 <view class='hd'>
 
-<view class="pic"><image src="{{dish.url}}"></image></view>
+<view class="pic"><image src="{{dish.DishBigImage}}"></image></view>
 
 </view>
 
 <view class="bd">
 <view class="likebutton" bindtap='clicklike'>
-<block wx:if="{{like}}">
+<block wx:if="{{Like}}">
 <i class="fa fa-heart like-icon" aria-hidden="true"></i>
 <text> 取消赞</text>
 </block>
@@ -27,7 +27,7 @@
 <view class="icon">
 <i class="fa fa-bell icon" aria-hidden="true"></i>
 </view>
-<text>{{dish.name}}</text>
+<text>{{dish.DishName}}</text>
 </view>
 </view>
 <view class="descitem">
@@ -36,7 +36,7 @@
 <i class="fa fa-bars icon" aria-hidden="true"></i>
 </view>
 <view class="tex">
-<text>{{dish.desc}}</text>
+<text>{{dish.Description}}</text>
 </view>
 </view>
 </view>
@@ -46,7 +46,7 @@
 <i class="fa fa-cutlery icon" aria-hidden="true"></i>
 </view>
 <view class="tex">
-<text>{{dish.rawmaterial}}</text>
+<text>{{dish.RawStuff}}</text>
 </view>
 </view>
 </view>
@@ -55,7 +55,7 @@
 <view class="icon">
 <i class="fa fa-heart icon" aria-hidden="true"></i>
 </view>
-<text>共有{{dish.like}}人点赞</text>
+<text>共有{{dish.Like}}人点赞</text>
 </view>
 </view>
 </view>

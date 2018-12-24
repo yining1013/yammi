@@ -15,14 +15,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
    console.log(options)
     this.setData({id:options.id})
     console.log(app.globalData)
-    for(let i in app.globalData.recdish){
-      if (app.globalData.recdish[i].id==options.id){
+    for (let i in app.globalData.Dish_List){
+      if (app.globalData.Dish_List[i].DishID==options.id){
         // console.log(item)
-        this.setData({ dish: app.globalData.recdish[i]})
+        this.setData({ dish: app.globalData.Dish_List[i]})
       }
     }
   },
