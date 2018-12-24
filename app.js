@@ -34,6 +34,9 @@ App({
                     wx.request({
                       url: 'http://120.79.160.115:5000/users/getRecDish',
                       method: 'post',
+                      header: {
+                        'content-type': 'application/x-www-forom-urlencoded'
+                      },
                       data:{
                         iv: iv,
                         encryptedData: encryptedData,
@@ -52,11 +55,14 @@ App({
                 wx.request({
                   url: 'http://120.79.160.115:5000/users/getRecDish',
                   method: 'post',
+                  header: {
+                    'content-type': 'application/x-www-form-urlencoded'
+                  },
                   data: {
-                    'iv': '',
-                    'encryptedData': '',
-                    'session_key': '',
-                    'appid':'',
+                    'iv': "",
+                    'encryptedData': "",
+                    'session_key': session_key,
+                    'appid': 'wxeb3ca6ec32ed2bce',
                     'openid': openid
                   },
                   success(res) {
